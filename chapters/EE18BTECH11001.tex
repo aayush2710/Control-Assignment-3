@@ -1,0 +1,70 @@
+\begin{enumerate}[label=\thesection.\arabic*.,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item An op amp designed to have a low-frequency gain of $10^{5}$ and a high-frequency response dominated by a single pole at 100 rad/s, acquires, through a manufacturing error, a pair of additional poles at 10,000 rad/s. 
+\begin{enumerate}
+\item At what frequency does the total phase shift reach 180$\degree$ ? 
+\item At this frequency, for what value of $\beta$, assumed to be frequency independent, does the loop gain reach a value of unity? 
+\item What is the corresponding value of closed-loop gain at low frequencies?
+\end{enumerate}
+\solution
+\begin{align}
+G(s) &= \frac{A}{1+\frac{s}{p}} 
+\\
+A &= \text{Low Frequency Gain} = 10^{5}
+\\
+p &= 100
+\\
+G(s) &= \dfrac{10^{5}}{(1+\dfrac{s}{100})(1+\dfrac{s}{10^{4}})^{2}}
+\\
+\measuredangle G(j\omega) &= -\tan^{-1}\frac{\omega}{100} - 2\tan^{-1}\frac{\omega}{10^{4}}
+\end{align}
+\item Calculating the frequency at which the total phase shift reach 180$\degree$ 
+
+At $\omega_{180}, \measuredangle G(j\omega_{180}) = -180\degree$
+
+Also $\omega_{180} >> 100$
+\begin{align}
+180\degree &= 90\degree  + 2 \tan^{-1}(\frac{\omega_{180}}{10^{4}})
+\\
+\tan^{-1}\frac{\omega_{180}}{10^{4}}&= 45\degree
+\\
+\frac{\omega_{180}}{10^{4}} &= \tan 45\degree = 1
+\\
+\omega_{180} &= 10^{4} rad/s
+\end{align}
+\item Calculating feedback factor $\beta$ for which loop gain at $\omega_{180}$ is unity
+\begin{align}
+\text{Loop Gain} = G(s)\beta = 1
+\\
+\dfrac{10^{5}\beta}{\sqrt{1^{2} + (\dfrac{\omega_{180}}{10^{2}})^{2}} \sqrt{(1+\dfrac{\omega_{180}}{10^{4}})^{2}}} = 1
+\\
+\beta = 0.002
+\end{align}
+\item Calculating the closed loop gain at low frequency
+Let $H(s)$ be the closed loop Transfer Function.
+\begin{align}
+H(s) &= \dfrac{G(s)}{1+\beta G(s)}
+\\
+H(s) &= \dfrac{10^{5}}{1+\beta 10^{5}+ \dfrac{s}{100}}
+\\
+|H(s)| &= \dfrac{10^{5}}{\sqrt{(200)^{2} + (\frac{s}{100})^{2}}}
+\end{align}
+At low frequencies
+\begin{align}
+|H(s)| &= 500 V/V
+\end{align}
+
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11001/table1.tex}
+\caption{Obtained Parameters}
+\label{table:ee18btech11001_params}
+\end{table}
+
+The following code performs all the calculations of above equations and returns the parameters 
+\begin{lstlisting}
+codes/ee18btech11001/code1.py
+\end{lstlisting}
+
+
+\end{enumerate}

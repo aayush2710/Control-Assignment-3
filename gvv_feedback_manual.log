@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.8)  12 MAY 2020 14:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.8)  16 MAY 2020 15:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1366,39 +1366,43 @@ File: utxsyc.fd 2000/12/15 v3.1
 ) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]) [2
+] (./figs/ee18btech11001/circuit.tex
+\realshift=\dimen328
+\realshift=\dimen329
+\realshift=\dimen330
+) (./tables/ee18btech11001/table2.tex)) [2
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 310.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 310.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
  (./gvv_feedback_manual.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 310.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 310.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
 Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
-(rerunfilecheck)             Checksum: F0ED29D09F5DD99F5FDA2FC45BE9766E;70.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 310.
+(rerunfilecheck)             Checksum: 4700AC874B8E568D7248F794B3922B64;62.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
  ) 
 Here is how much of TeX's memory you used:
- 37562 strings out of 492167
- 819587 string characters out of 6131559
- 1058404 words of memory out of 5000000
- 41241 multiletter control sequences out of 15000+600000
- 81907 words of font info for 186 fonts, out of 8000000 for 9000
+ 38161 strings out of 492167
+ 834231 string characters out of 6131559
+ 1067404 words of memory out of 5000000
+ 41818 multiletter control sequences out of 15000+600000
+ 89279 words of font info for 211 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,16n,73p,511b,1155s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
-ts/type1/public/txfonts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txf
-onts/rtxr.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr
-/share/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texmf-dist/fo
-nts/type1/public/txfonts/txsy.pfb></usr/share/texmf-dist/fonts/type1/public/txf
-onts/txsya.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/sh
-are/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texmf-dist/fonts/t
-ype1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.
-pfb>
-Output written on gvv_feedback_manual.pdf (2 pages, 62009 bytes).
+ts/type1/public/txfonts/rtxb.pfb></usr/share/texmf-dist/fonts/type1/public/txfo
+nts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/
+share/texmf-dist/fonts/type1/public/txfonts/rtxsc.pfb></usr/share/texmf-dist/fo
+nts/type1/public/txfonts/txbsy.pfb></usr/share/texmf-dist/fonts/type1/public/tx
+fonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr
+/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/f
+onts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/ut
+mr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on gvv_feedback_manual.pdf (2 pages, 60985 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 33 named destinations out of 1000 (max. 500000)
+ 121 PDF objects out of 1000 (max. 8388607)
+ 104 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

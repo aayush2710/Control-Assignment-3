@@ -8,11 +8,15 @@
 \end{enumerate}
 \solution
 \begin{align}
-G(s) &= \frac{A}{1+\frac{s}{p}} 
+T(s) &= \frac{A}{1+\frac{s}{p}} 
+\\
+G(s) &= \dfrac{A}{(1+\dfrac{s}{p})(1+\dfrac{s}{p_{error}})} 
 \\
 A &= \text{Low Frequency Gain} = 10^{5}
 \\
 p &= 100
+\\
+p_{error} &= 10^{4}
 \\
 G(s) &= \dfrac{10^{5}}{(1+\dfrac{s}{100})(1+\dfrac{s}{10^{4}})^{2}}
 \\
@@ -65,6 +69,44 @@ The following code performs all the calculations of above equations and returns 
 \begin{lstlisting}
 codes/ee18btech11001/code1.py
 \end{lstlisting}
+
+\item Designing the circuit for transfer function $T(s)$
+\begin{figure}[!hbt]
+	\begin{center}
+			\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11001/circuit.tex}}
+	\end{center}
+\caption{1}
+\label{fig:equivalent_system}
+\end{figure}
+
+Let us assume Op-Amp to be ideal. So this means $V_{1}=0$
+Applying KCL at node $V_{1}$
+
+\begin{align}
+I_{in} &= I_{C_{1}} + I_{R_{2}}
+\\
+\dfrac{V_{in}}{R_{1}} &= \dfrac{V_{out}}{R_{2}} + C_{1}\dfrac{dV_{out}}{dt}
+\end{align}
+In Laplace domain
+\begin{align}
+\dfrac{V_{in}(s)}{R_{1}} &= \dfrac{V_{out}(s)}{R_{2}} + C_{1}sV_{out}(s)
+\\
+\dfrac{V_{out}}{V_{in}} &= \dfrac{R_{2}/R_{1}}{1+sR_{1}C_{1}}
+\\
+T(s) &= \dfrac{10^{5}}{1+\frac{s}{100}}
+\\
+\frac{R_{2}}{R_{1}} &= 10^{5}
+\\
+R_{1}C_{1} &= \frac{1}{100}
+\end{align}
+
+
+\begin{table}[!ht]
+\centering
+\input{./tables/ee18btech11001/table2.tex}
+\caption{Circuit Parameters}
+\label{table:ee18btech11001_params2}
+\end{table}
 
 
 \end{enumerate}

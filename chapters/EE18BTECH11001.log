@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.8)  16 MAY 2020 14:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.8)  17 MAY 2020 16:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -612,7 +612,7 @@ deleted material, e.g., by typing `I$}'.
 
 ! Misplaced alignment tab character &.
 l.13 G(s) &
-           = \dfrac{A}{(1+\frac{s}{p})(1+\frac{s}{p_{error})}}
+           = \dfrac{A}{(1+\dfrac{s}{p})(1+\dfrac{s}{p_{error}})}
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -622,7 +622,25 @@ might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
 l.13 G(s) &= \dfrac
-                   {A}{(1+\frac{s}{p})(1+\frac{s}{p_{error})}}
+                   {A}{(1+\dfrac{s}{p})(1+\dfrac{s}{p_{error}})}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.13 G(s) &= \dfrac{A}{(1+\dfrac
+                                {s}{p})(1+\dfrac{s}{p_{error}})}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.13 G(s) &= \dfrac{A}{(1+\dfrac{s}{p})(1+\dfrac
+                                                {s}{p_{error}})}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -659,7 +677,17 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Misplaced alignment tab character &.
-l.19 G(s) &
+l.19 p_{error} &
+                = 10^{4}
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.21 G(s) &
            = \dfrac{10^{5}}{(1+\dfrac{s}{100})(1+\dfrac{s}{10^{4}})^{2}}
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -669,7 +697,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.19 G(s) &= \dfrac
+l.21 G(s) &= \dfrac
                    {10^{5}}{(1+\dfrac{s}{100})(1+\dfrac{s}{10^{4}})^{2}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -678,7 +706,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.19 G(s) &= \dfrac{10^{5}}{(1+\dfrac
+l.21 G(s) &= \dfrac{10^{5}}{(1+\dfrac
                                      {s}{100})(1+\dfrac{s}{10^{4}})^{2}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -687,7 +715,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.19 ...\dfrac{10^{5}}{(1+\dfrac{s}{100})(1+\dfrac
+l.21 ...\dfrac{10^{5}}{(1+\dfrac{s}{100})(1+\dfrac
                                                   {s}{10^{4}})^{2}}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -698,7 +726,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 <recently read> \measuredangle 
                                
-l.21 \measuredangle
+l.23 \measuredangle
                     G(j\omega) &= -\tan^{-1}\frac{\omega}{100} - 2\tan^{-1}\...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -707,7 +735,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.21 \measuredangle G(j\omega) &
+l.23 \measuredangle G(j\omega) &
                                 = -\tan^{-1}\frac{\omega}{100} - 2\tan^{-1}\...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -723,7 +751,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.22 \end{align}
+l.24 \end{align}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -732,7 +760,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.22 \end{align}
+l.24 \end{align}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -743,7 +771,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.22 \end{align}
+l.24 \end{align}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -752,7 +780,7 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (454.08664pt too wide) in paragraph at lines 11--23
+Overfull \hbox (498.22531pt too wide) in paragraph at lines 11--25
 []$ 
  []
 
@@ -815,7 +843,7 @@ Missing character: There is no 0 in font nullfont!
 ! Undefined control sequence.
 <recently read> \degree 
                         
-l.23 ...ch the total phase shift reach 180$\degree
+l.25 ...ch the total phase shift reach 180$\degree
                                                   $
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -826,7 +854,7 @@ and I'll forget about whatever was undefined.
 Missing character: There is no A in font nullfont!
 Missing character: There is no t in font nullfont!
 ! Undefined control sequence.
-l.25 At $\omega_{180}, \measuredangle
+l.27 At $\omega_{180}, \measuredangle
                                       G(j\omega_{180}) = -180\degree$
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -835,7 +863,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.25 ...asuredangle G(j\omega_{180}) = -180\degree
+l.27 ...asuredangle G(j\omega_{180}) = -180\degree
                                                   $
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -844,13 +872,13 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (72.69655pt too wide) in paragraph at lines 25--26
+Overfull \hbox (72.69655pt too wide) in paragraph at lines 27--28
 \OML/cmm/m/it/10 ![]; G\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 j![]\OT1/cmr/m/n/10 ) 
 =
  []
 
 
-Overfull \hbox (22.77785pt too wide) in paragraph at lines 25--26
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 27--28
 \OMS/cmsy/m/n/10 ^^@\OT1/cmr/m/n/10 180$ 
  []
 
@@ -865,7 +893,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.28 \begin{align}
+l.30 \begin{align}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -875,7 +903,7 @@ Missing character: There is no 1 in font nullfont!
 Missing character: There is no 8 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 ! Undefined control sequence.
-l.29 180\degree
+l.31 180\degree
                 &= 90\degree  + 2 \tan^{-1}(\frac{\omega_{180}}{10^{4}})
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -884,7 +912,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.29 180\degree &
+l.31 180\degree &
                  = 90\degree  + 2 \tan^{-1}(\frac{\omega_{180}}{10^{4}})
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -897,7 +925,7 @@ Missing character: There is no = in font nullfont!
 Missing character: There is no 9 in font nullfont!
 Missing character: There is no 0 in font nullfont!
 ! Undefined control sequence.
-l.29 180\degree &= 90\degree
+l.31 180\degree &= 90\degree
                               + 2 \tan^{-1}(\frac{\omega_{180}}{10^{4}})
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -910,13 +938,13 @@ Missing character: There is no 2 in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.29 180\degree &= 90\degree  + 2 \tan
+l.31 180\degree &= 90\degree  + 2 \tan
                                       ^{-1}(\frac{\omega_{180}}{10^{4}})
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 ! Misplaced alignment tab character &.
-l.31 \tan^{-1}\frac{\omega_{180}}{10^{4}}&
+l.33 \tan^{-1}\frac{\omega_{180}}{10^{4}}&
                                           = 45\degree
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -926,7 +954,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.31 ...-1}\frac{\omega_{180}}{10^{4}}&= 45\degree
+l.33 ...-1}\frac{\omega_{180}}{10^{4}}&= 45\degree
                                                   
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -935,7 +963,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.33 \frac{\omega_{180}}{10^{4}} &
+l.35 \frac{\omega_{180}}{10^{4}} &
                                   = \tan 45\degree = 1
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -945,7 +973,7 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 ! Undefined control sequence.
-l.33 \frac{\omega_{180}}{10^{4}} &= \tan 45\degree
+l.35 \frac{\omega_{180}}{10^{4}} &= \tan 45\degree
                                                    = 1
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -954,7 +982,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Misplaced alignment tab character &.
-l.35 \omega_{180} &
+l.37 \omega_{180} &
                    = 10^{4} rad/s
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -970,7 +998,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.36 \end{align}
+l.38 \end{align}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -979,7 +1007,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.36 \end{align}
+l.38 \end{align}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -988,52 +1016,52 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (37.01624pt too wide) in paragraph at lines 27--37
+Overfull \hbox (37.01624pt too wide) in paragraph at lines 29--39
 \OML/cmm/m/it/10 ![] >>
  []
 
 
-Overfull \hbox (15.00005pt too wide) in paragraph at lines 27--37
+Overfull \hbox (15.00005pt too wide) in paragraph at lines 29--39
 \OT1/cmr/m/n/10 100$
  []
 
 
-Overfull \hbox (51.10469pt too wide) in paragraph at lines 27--37
+Overfull \hbox (51.10469pt too wide) in paragraph at lines 29--39
 [][]\OT1/cmr/m/n/10 ([])[] 
  []
 
 
-Overfull \hbox (55.54903pt too wide) in paragraph at lines 27--37
+Overfull \hbox (55.54903pt too wide) in paragraph at lines 29--39
 [][] [] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (10.00003pt too wide) in paragraph at lines 27--37
+Overfull \hbox (10.00003pt too wide) in paragraph at lines 29--39
 \OT1/cmr/m/n/10 45[] 
  []
 
 
-Overfull \hbox (28.70177pt too wide) in paragraph at lines 27--37
+Overfull \hbox (28.70177pt too wide) in paragraph at lines 29--39
 [] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (36.66666pt too wide) in paragraph at lines 27--37
+Overfull \hbox (36.66666pt too wide) in paragraph at lines 29--39
 [] \OT1/cmr/m/n/10 45 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 27--37
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 29--39
 \OT1/cmr/m/n/10 1[] 
  []
 
 
-Overfull \hbox (29.23843pt too wide) in paragraph at lines 27--37
+Overfull \hbox (29.23843pt too wide) in paragraph at lines 29--39
 \OML/cmm/m/it/10 ![] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (39.4538pt too wide) in paragraph at lines 27--37
+Overfull \hbox (39.4538pt too wide) in paragraph at lines 29--39
 \OT1/cmr/m/n/10 10[]\OML/cmm/m/it/10 rad=s$ 
  []
 
@@ -1094,14 +1122,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38 \begin{align}
+l.40 \begin{align}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 ! Undefined control sequence.
-l.39 \text
+l.41 \text
           {Loop Gain} = G(s)\beta = 1
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1125,7 +1153,7 @@ Missing character: There is no ) in font nullfont!
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.39 \text{Loop Gain} = G(s)\beta
+l.41 \text{Loop Gain} = G(s)\beta
                                   = 1
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1133,7 +1161,7 @@ you left one out. Proceed, with fingers crossed.
 ! Undefined control sequence.
 <recently read> \dfrac 
                        
-l.41 \dfrac
+l.43 \dfrac
            {10^{5}\beta}{\sqrt{1^{2} + (\dfrac{\omega_{180}}{10^{2}})^{2}} \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1142,7 +1170,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.41 \dfrac{10^{5}\beta}{\sqrt{1^{2} + (\dfrac
+l.43 \dfrac{10^{5}\beta}{\sqrt{1^{2} + (\dfrac
                                               {\omega_{180}}{10^{2}})^{2}} \...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1151,7 +1179,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.41 ...omega_{180}}{10^{2}})^{2}} \sqrt{(1+\dfrac
+l.43 ...omega_{180}}{10^{2}})^{2}} \sqrt{(1+\dfrac
                                                   {\omega_{180}}{10^{4}})^{2...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1166,7 +1194,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 \end{align}
+l.46 \end{align}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1175,7 +1203,7 @@ or  <return>  to continue without it.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.44 \end{align}
+l.46 \end{align}
                 
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1184,42 +1212,42 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (6.18402pt too wide) in paragraph at lines 37--45
+Overfull \hbox (6.18402pt too wide) in paragraph at lines 39--47
 \OML/cmm/m/it/10 ^^L$
  []
 
 
-Overfull \hbox (18.68292pt too wide) in paragraph at lines 37--45
+Overfull \hbox (18.68292pt too wide) in paragraph at lines 39--47
 \OML/cmm/m/it/10 ![]$
  []
 
 
-Overfull \hbox (16.73953pt too wide) in paragraph at lines 37--45
+Overfull \hbox (16.73953pt too wide) in paragraph at lines 39--47
 \OML/cmm/m/it/10 ^^L \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 37--45
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 39--47
 \OT1/cmr/m/n/10 1[] 
  []
 
 
-Overfull \hbox (181.02219pt too wide) in paragraph at lines 37--45
+Overfull \hbox (181.02219pt too wide) in paragraph at lines 39--47
 [][] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 37--45
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 39--47
 \OT1/cmr/m/n/10 1[] 
  []
 
 
-Overfull \hbox (16.73953pt too wide) in paragraph at lines 37--45
+Overfull \hbox (16.73953pt too wide) in paragraph at lines 39--47
 \OML/cmm/m/it/10 ^^L \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (22.77785pt too wide) in paragraph at lines 37--45
+Overfull \hbox (22.77785pt too wide) in paragraph at lines 39--47
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 002$ 
  []
 
@@ -1301,252 +1329,14 @@ Missing character: There is no o in font nullfont!
 Missing character: There is no n in font nullfont!
 Missing character: There is no . in font nullfont!
 
-! LaTeX Error: Environment align undefined.
+! LaTeX Error: Environment figure undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.47 \begin{align}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Missing character: There is no H in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no ) in font nullfont!
-! Misplaced alignment tab character &.
-l.48 H(s) &
-           = \dfrac{G(s)}{1+\beta G(s)}
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no = in font nullfont!
-! Undefined control sequence.
-l.48 H(s) &= \dfrac
-                   {G(s)}{1+\beta G(s)}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-Missing character: There is no G in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no + in font nullfont!
-! Missing $ inserted.
-<inserted text> 
-                $
-l.48 H(s) &= \dfrac{G(s)}{1+\beta
-                                  G(s)}
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-l.48 H(s) &= \dfrac{G(s)}{1+\beta G(s)}
-                                       
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Misplaced alignment tab character &.
-l.50 H(s) &
-           = \dfrac{10^{5}}{1+\beta 10^{5}+ \dfrac{s}{100}}
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Undefined control sequence.
-l.50 H(s) &= \dfrac
-                   {10^{5}}{1+\beta 10^{5}+ \dfrac{s}{100}}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-l.50 H(s) &= \dfrac{10^{5}}{1+\beta 10^{5}+ \dfrac
-                                                  {s}{100}}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Misplaced alignment tab character &.
-l.52 |H(s)| &
-             = \dfrac{10^{5}}{\sqrt{(200)^{2} + (\frac{s}{100})^{2}}}
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Undefined control sequence.
-l.52 |H(s)| &= \dfrac
-                     {10^{5}}{\sqrt{(200)^{2} + (\frac{s}{100})^{2}}}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-! LaTeX Error: \begin{enumerate} on input line 1 ended by \end{align}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 \end{align}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.53 \end{align}
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.53 \end{align}
-                
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Missing character: There is no A in font nullfont!
-Missing character: There is no t in font nullfont!
-Missing character: There is no l in font nullfont!
-Missing character: There is no o in font nullfont!
-Missing character: There is no w in font nullfont!
-Missing character: There is no f in font nullfont!
-Missing character: There is no r in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no q in font nullfont!
-Missing character: There is no u in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no n in font nullfont!
-Missing character: There is no c in font nullfont!
-Missing character: There is no i in font nullfont!
-Missing character: There is no e in font nullfont!
-Missing character: There is no s in font nullfont!
-
-! LaTeX Error: Environment align undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55 \begin{align}
-                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Missing character: There is no | in font nullfont!
-Missing character: There is no H in font nullfont!
-Missing character: There is no ( in font nullfont!
-Missing character: There is no s in font nullfont!
-Missing character: There is no ) in font nullfont!
-Missing character: There is no | in font nullfont!
-! Misplaced alignment tab character &.
-l.56 |H(s)| &
-             = 500 V/V
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Missing character: There is no = in font nullfont!
-Missing character: There is no 5 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no 0 in font nullfont!
-Missing character: There is no V in font nullfont!
-Missing character: There is no / in font nullfont!
-Missing character: There is no V in font nullfont!
-
-! LaTeX Error: \begin{enumerate} on input line 1 ended by \end{align}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.57 \end{align}
-                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (21.59027pt too wide) in paragraph at lines 45--58
-\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )$
- []
-
-
-Overfull \hbox (26.51181pt too wide) in paragraph at lines 45--58
-\OML/cmm/m/it/10 ^^LG\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )[] 
- []
-
-
-Overfull \hbox (32.14578pt too wide) in paragraph at lines 45--58
-\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 ) =
- []
-
-
-Overfull \hbox (84.28818pt too wide) in paragraph at lines 45--58
-[][][] 
- []
-
-
-Overfull \hbox (37.70135pt too wide) in paragraph at lines 45--58
-\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr
-/m/n/10 )\OMS/cmsy/m/n/10 j \OT1/cmr/m/n/10 =
- []
-
-
-Overfull \hbox (90.5946pt too wide) in paragraph at lines 45--58
-[][]$
- []
-
-
-! LaTeX Error: Environment table undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.59 \begin{table}
-                  [!ht]
+l.49 \begin{figure}
+                   [!hbt]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -1554,10 +1344,47 @@ or  <return>  to continue without it.
 Missing character: There is no [ in font nullfont!
 Missing character: There is no ! in font nullfont!
 Missing character: There is no h in font nullfont!
+Missing character: There is no b in font nullfont!
 Missing character: There is no t in font nullfont!
 Missing character: There is no ] in font nullfont!
 
-! LaTeX Error: File `./tables/ee18btech11001/table1.tex' not found.
+Overfull \hbox (21.59027pt too wide) in paragraph at lines 47--50
+\OML/cmm/m/it/10 H\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 s\OT1/cmr/m/n/10 )$
+ []
+
+! Undefined control sequence.
+l.51 			\resizebox
+                  {\columnwidth}{!}{\input{./figs/ee18btech11001/circuit2.tex}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.51 			\resizebox{\columnwidth}
+                                {!}{\input{./figs/ee18btech11001/circuit2.tex}}
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.51 			\resizebox{\columnwidth}
+                                {!}{\input{./figs/ee18btech11001/circuit2.tex}}
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ! in font nullfont!
+
+! LaTeX Error: File `./figs/ee18btech11001/circuit2.tex' not found.
 
 Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: tex)
@@ -1566,17 +1393,17 @@ Enter file name:
 ! Emergency stop.
 <read *> 
          
-l.61 \input{./tables/ee18btech11001/table1.tex}
-                                               ^^M
+l.51 ...\input{./figs/ee18btech11001/circuit2.tex}
+                                                  }^^M
 *** (cannot \read from terminal in nonstop modes)
 
  
 Here is how much of TeX's memory you used:
  19 strings out of 492167
  327 string characters out of 6131559
- 63016 words of memory out of 5000000
+ 62016 words of memory out of 5000000
  4480 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 18i,5n,12p,258b,126s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 18i,5n,12p,258b,129s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

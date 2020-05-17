@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.8)  16 MAY 2020 15:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.8)  17 MAY 2020 19:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1357,22 +1357,108 @@ File: utxsyc.fd 2000/12/15 v3.1
 \tf@toc=\write5
 \openout5 = `gvv_feedback_manual.toc'.
 
-(./chapters/EE18BTECH11001.tex (./tables/ee18btech11001/table1.tex
+(./chapters/EE18BTECH11001.tex
+Package epstopdf Info: Source file: <./figs/ee18btech11001/Figure_1.eps>
+(epstopdf)                    date: 2020-05-17 16:54:28
+(epstopdf)                    size: 687921 bytes
+(epstopdf)             Output file: <./figs/ee18btech11001/Figure_1-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2020-05-17 16:56:24
+(epstopdf)                    size: 15744 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figs/ee18btech11001/Figu
+re_1-eps-converted-to.pdf ./figs/ee18btech11001/Figure_1.eps>
+(epstopdf)             \includegraphics on input line 42.
+Package epstopdf Info: Output file is already uptodate.
+<./figs/ee18btech11001/Figure_1-eps-converted-to.pdf, id=12, 157.58875pt x 111.
+41624pt>
+File: ./figs/ee18btech11001/Figure_1-eps-converted-to.pdf Graphic file (type pd
+f)
+<use ./figs/ee18btech11001/Figure_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/ee18btech11001/Figure_1-eps-converted-to.pdf  u
+sed on input line 42.
+(pdftex.def)             Requested size: 252.0pt x 178.17612pt.
+ (./figs/ee18btech11001/circuit2.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap
+/pdftex.map}
+
+
+ <./figs/ee18btech11001/Figure_1-eps-converted-to.pdf>] (./tables/ee18btech1100
+1/table1.tex
 \gnumericTableWidth=\skip79
 \gnumericTableWidthComplete=\skip80
 \gnumericMultiRowLength=\skip81
 \gnumericColA=\skip82
 \gnumericColB=\skip83
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+)
+Package epstopdf Info: Source file: <./figs/ee18btech11001/Figure_2.eps>
+(epstopdf)                    date: 2020-05-17 17:20:26
+(epstopdf)                    size: 662216 bytes
+(epstopdf)             Output file: <./figs/ee18btech11001/Figure_2-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2020-05-17 17:21:16
+(epstopdf)                    size: 17075 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figs/ee18btech11001/Figu
+re_2-eps-converted-to.pdf ./figs/ee18btech11001/Figure_2.eps>
+(epstopdf)             \includegraphics on input line 89.
+Package epstopdf Info: Output file is already uptodate.
+<./figs/ee18btech11001/Figure_2-eps-converted-to.pdf, id=54, 151.56625pt x 111.
+41624pt>
+File: ./figs/ee18btech11001/Figure_2-eps-converted-to.pdf Graphic file (type pd
+f)
+<use ./figs/ee18btech11001/Figure_2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/ee18btech11001/Figure_2-eps-converted-to.pdf  u
+sed on input line 89.
+(pdftex.def)             Requested size: 252.0pt x 185.24843pt.
+Package epstopdf Info: Source file: <./figs/ee18btech11001/Figure_3.eps>
+(epstopdf)                    date: 2020-05-17 19:08:23
+(epstopdf)                    size: 663040 bytes
+(epstopdf)             Output file: <./figs/ee18btech11001/Figure_3-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2020-05-17 19:14:38
+(epstopdf)                    size: 16020 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figs/ee18btech11001/Figu
+re_3-eps-converted-to.pdf ./figs/ee18btech11001/Figure_3.eps>
+(epstopdf)             \includegraphics on input line 96.
+Package epstopdf Info: Output file is already uptodate.
+<./figs/ee18btech11001/Figure_3-eps-converted-to.pdf, id=55, 153.57375pt x 109.
+40875pt>
+File: ./figs/ee18btech11001/Figure_3-eps-converted-to.pdf Graphic file (type pd
+f)
+<use ./figs/ee18btech11001/Figure_3-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/ee18btech11001/Figure_3-eps-converted-to.pdf  u
+sed on input line 96.
+(pdftex.def)             Requested size: 252.0pt x 179.54166pt.
 
-
-] (./figs/ee18btech11001/circuit.tex
+(./figs/ee18btech11001/circuit.tex
 \realshift=\dimen328
 \realshift=\dimen329
 \realshift=\dimen330
-) (./tables/ee18btech11001/table2.tex)) [2
+)
+Underfull \vbox (badness 1668) has occurred while \output is active []
 
-]
+ [2 <./figs/ee18btech11001/Figure_2-eps-converted-to.pdf> <./figs/ee18btech1100
+1/Figure_3-eps-converted-to.pdf>] (./tables/ee18btech11001/table2.tex)
+Package epstopdf Info: Source file: <./figs/ee18btech11001/Figure_4.eps>
+(epstopdf)                    date: 2020-05-17 19:12:14
+(epstopdf)                    size: 2188125 bytes
+(epstopdf)             Output file: <./figs/ee18btech11001/Figure_4-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2020-05-17 19:14:43
+(epstopdf)                    size: 24913 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figs/ee18btech11001/Figu
+re_4-eps-converted-to.pdf ./figs/ee18btech11001/Figure_4.eps>
+(epstopdf)             \includegraphics on input line 153.
+Package epstopdf Info: Output file is already uptodate.
+<./figs/ee18btech11001/Figure_4-eps-converted-to.pdf, id=80, 844.15375pt x 428.
+60126pt>
+File: ./figs/ee18btech11001/Figure_4-eps-converted-to.pdf Graphic file (type pd
+f)
+<use ./figs/ee18btech11001/Figure_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figs/ee18btech11001/Figure_4-eps-converted-to.pdf  u
+sed on input line 153.
+(pdftex.def)             Requested size: 252.0pt x 127.94699pt.
+) [3
+
+ <./figs/ee18btech11001/Figure_4-eps-converted-to.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
  (./gvv_feedback_manual.aux)
@@ -1380,13 +1466,17 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
 Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
 (rerunfilecheck)             Checksum: 4700AC874B8E568D7248F794B3922B64;62.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 301.
  ) 
 Here is how much of TeX's memory you used:
- 38161 strings out of 492167
- 834231 string characters out of 6131559
- 1067404 words of memory out of 5000000
- 41818 multiletter control sequences out of 15000+600000
+ 38288 strings out of 492167
+ 837495 string characters out of 6131559
+ 1063665 words of memory out of 5000000
+ 41928 multiletter control sequences out of 15000+600000
  89279 words of font info for 211 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  60i,16n,73p,511b,1155s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1399,10 +1489,10 @@ fonts/txex.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr
 /share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/share/texmf-dist/f
 onts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on gvv_feedback_manual.pdf (2 pages, 60985 bytes).
+Output written on gvv_feedback_manual.pdf (3 pages, 129018 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
- 104 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 151 PDF objects out of 1000 (max. 8388607)
+ 124 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

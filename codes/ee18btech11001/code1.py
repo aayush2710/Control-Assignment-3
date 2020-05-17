@@ -31,10 +31,12 @@ for i in range(len(w)):
 
 #Calculating feedbackfactor for unity gain at w_180
 beta = 1/Gain
-Den2 = Num[::-1] + beta*Den[::-1]
+Num1 = np.append(np.zeros(len(Den)-len(Num)) , Num)*A
+
+Den2 = beta*Num1 + Den
 
 #Closed Loop transfer function and its gain at low frequencies
-H = signal.lti(Num , Den2[::-1])
+H = signal.lti(Num*A , Den2)
 w1 = np.array([1])
 w1,mag1,phase1 = signal.bode(H,w1)
 Af = 10**(mag1/20)[0]

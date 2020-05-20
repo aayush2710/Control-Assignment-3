@@ -8,8 +8,10 @@
 \end{enumerate}
 \solution
 \begin{align}
-T(s) &= \frac{A}{1+\frac{s}{p}} 
-\\
+G(s) &= \frac{A}{1+\frac{s}{p}} 
+\end{align}
+Considering manufacturing error
+\begin{align}
 G(s) &= \dfrac{A}{(1+\dfrac{s}{p})(1+\dfrac{s}{p_{error}})} 
 \\
 A &= \text{Low Frequency Gain} = 10^{5}
@@ -36,24 +38,22 @@ Also $\omega_{180} >> 100$
 \\
 \omega_{180} &= 10^{4} rad/s
 \end{align}
-
 \begin{figure}[!ht]
 \centering
     \includegraphics[width=\columnwidth]{./figs/ee18btech11001/Figure_1.eps}
   \caption{Open Loop Gain}
   \label{fig:ee18btech11001_fig1}
 \end{figure}
-
 \item Calculating feedback factor $\beta$ for which loop gain at $\omega_{180}$ is unity
 \begin{align}
-\text{Loop Gain} = G(s)\beta = 1
+H(s) = G(s)\beta = 1
 \\
 \dfrac{10^{5}\beta}{\sqrt{1^{2} + (\dfrac{\omega_{180}}{10^{2}})^{2}} \sqrt{(1+\dfrac{\omega_{180}}{10^{4}})^{2}}} = 1
 \\
 \beta = 0.002
 \end{align}
 \item Calculating the closed loop gain at low frequency
-Let $H(s)$ be the closed loop Transfer Function.
+Let $T(s)$ be the closed loop Transfer Function.
 \begin{figure}[!hbt]
 	\begin{center}
 			\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11001/circuit2.tex}}
@@ -63,17 +63,17 @@ Let $H(s)$ be the closed loop Transfer Function.
 \end{figure}
 
 \begin{align}
-H(s) &= \dfrac{G(s)}{1+\beta G(s)}
+T(s) &= \dfrac{G(s)}{1+\beta G(s)}
 \\
-H(s) &= \dfrac{10^{5}}{1+\beta 10^{5}+ \dfrac{s}{100}}
+T(s) &= \dfrac{10^{5}}{1+\beta 10^{5}+ \dfrac{s}{100}}
 \end{align}
 
 \begin{align}
-|H(s)| &= \dfrac{10^{5}}{\sqrt{(200)^{2} + (\frac{s}{100})^{2}}}
+|T(s)| &= \dfrac{10^{5}}{\sqrt{(200)^{2} + (\frac{s}{100})^{2}}}
 \end{align}
 At low frequencies
 \begin{align}
-|H(s)| &= 500 V/V
+|T(s)| &= 500 V/V
 \end{align}
 
 \begin{table}[!ht]
@@ -108,7 +108,7 @@ codes/ee18btech11001/code2.py
 \end{lstlisting}
 
 
-\item Designing the circuit for transfer function $T(s)$
+\item Designing the circuit for transfer function $G(s)$
 \begin{figure}[!hbt]
 	\begin{center}
 			\resizebox{\columnwidth}{!}{\input{./figs/ee18btech11001/circuit.tex}}
@@ -157,4 +157,12 @@ R_{2}C_{1} &= \frac{1}{100}
 
 A SPICE simulation of circuit \ref{fig:equivalent_system1} is done by providing a DC input(Unit Step Input). The obtained plot (figure \ref{fig:ee18btech11001_fig5}) is similar to the Step response of the feedback system in figure \ref{fig:ee18btech11001_fig3}. Hence we verify our design is correct.
 
+
+
+The following code plots the SPICE simulation results
+from SPICE plot txt file
+
+\begin{lstlisting}
+codes/ee18btech11001/spice/plotter.py
+\end{lstlisting}
 \end{enumerate}

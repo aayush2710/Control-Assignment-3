@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 
 
 #Spice plot is stored in spice.txt
-A = np.genfromtxt("spice.txt")[1:]
+A = np.genfromtxt("plot.dat")[1:]
 
 
 plt.figure()

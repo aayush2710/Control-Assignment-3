@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.8)  24 MAY 2020 14:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.8)  25 MAY 2020 19:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1442,15 +1442,12 @@ Package epstopdf Info: Source file: <./figs/Figure_4.eps>
 (epstopdf)                    date: 2020-05-24 14:46:08
 (epstopdf)                    size: 663040 bytes
 (epstopdf)             Output file: <./figs/Figure_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2020-05-24 14:46:44
+(epstopdf)                    size: 14945 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figs/Figure_4-eps-conver
 ted-to.pdf ./figs/Figure_4.eps>
 (epstopdf)             \includegraphics on input line 188.
-runsystem(repstopdf --outfile=./figs/Figure_4-eps-converted-to.pdf ./figs/Figur
-e_4.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <./figs/Figure_4-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-05-24 14:46:44
-(epstopdf)                    size: 14945 bytes.
+Package epstopdf Info: Output file is already uptodate.
 <./figs/Figure_4-eps-converted-to.pdf, id=73, 153.57375pt x 109.40875pt>
 File: ./figs/Figure_4-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figs/Figure_4-eps-converted-to.pdf>
@@ -1472,7 +1469,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 270.
 Here is how much of TeX's memory you used:
  38750 strings out of 492167
  848624 string characters out of 6131559
- 1082841 words of memory out of 5000000
+ 1082837 words of memory out of 5000000
  42379 multiletter control sequences out of 15000+600000
  88225 words of font info for 209 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1486,7 +1483,7 @@ onts/txsy.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr
 /share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on gvv_feedback_manual.pdf (4 pages, 119954 bytes).
+Output written on gvv_feedback_manual.pdf (4 pages, 119785 bytes).
 PDF statistics:
  159 PDF objects out of 1000 (max. 8388607)
  132 compressed objects within 2 object streams

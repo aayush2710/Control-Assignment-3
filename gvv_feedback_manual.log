@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.8)  25 MAY 2020 20:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.5.8)  26 MAY 2020 22:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1367,7 +1367,7 @@ Package epstopdf Info: Source file: <./figs/Figure_1.eps>
 ted-to.pdf ./figs/Figure_1.eps>
 (epstopdf)             \includegraphics on input line 43.
 Package epstopdf Info: Output file is already uptodate.
-<./figs/Figure_1-eps-converted-to.pdf, id=7, 157.58875pt x 111.41624pt>
+<./figs/Figure_1-eps-converted-to.pdf, id=11, 157.58875pt x 111.41624pt>
 File: ./figs/Figure_1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figs/Figure_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./figs/Figure_1-eps-converted-to.pdf  used on input li
@@ -1397,83 +1397,98 @@ Package epstopdf Info: Source file: <./figs/Figure_2.eps>
 ted-to.pdf ./figs/Figure_2.eps>
 (epstopdf)             \includegraphics on input line 89.
 Package epstopdf Info: Output file is already uptodate.
-<./figs/Figure_2-eps-converted-to.pdf, id=45, 151.56625pt x 111.41624pt>
+<./figs/Figure_2-eps-converted-to.pdf, id=49, 151.56625pt x 111.41624pt>
 File: ./figs/Figure_2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figs/Figure_2-eps-converted-to.pdf>
 Package pdftex.def Info: ./figs/Figure_2-eps-converted-to.pdf  used on input li
 ne 89.
 (pdftex.def)             Requested size: 252.0pt x 185.24843pt.
 Package epstopdf Info: Source file: <./figs/Figure_3.eps>
-(epstopdf)                    date: 2020-05-17 19:08:23
-(epstopdf)                    size: 663040 bytes
+(epstopdf)                    date: 2020-05-26 22:30:09
+(epstopdf)                    size: 683315 bytes
 (epstopdf)             Output file: <./figs/Figure_3-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-05-17 19:14:38
-(epstopdf)                    size: 16020 bytes
+(epstopdf)                    date: 2020-05-26 22:30:32
+(epstopdf)                    size: 15982 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figs/Figure_3-eps-conver
 ted-to.pdf ./figs/Figure_3.eps>
 (epstopdf)             \includegraphics on input line 96.
 Package epstopdf Info: Output file is already uptodate.
-<./figs/Figure_3-eps-converted-to.pdf, id=46, 153.57375pt x 109.40875pt>
+<./figs/Figure_3-eps-converted-to.pdf, id=50, 158.5925pt x 109.40875pt>
 File: ./figs/Figure_3-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figs/Figure_3-eps-converted-to.pdf>
 Package pdftex.def Info: ./figs/Figure_3-eps-converted-to.pdf  used on input li
 ne 96.
-(pdftex.def)             Requested size: 252.0pt x 179.54166pt.
+(pdftex.def)             Requested size: 252.0pt x 173.86221pt.
  (./figs/circuit.tex
 \realshift=\dimen328
 \realshift=\dimen329
 \realshift=\dimen330
-)
-
-LaTeX Warning: Text page 2 contains only floats.
-
-[2 <./figs/Figure_2-eps-converted-to.pdf> <./figs/Figure_3-eps-converted-to.pdf
->] (./figs/circuit3.tex
 \realshift=\dimen331
 \realshift=\dimen332
-) (./figs/circuit4.tex
 \realshift=\dimen333
 \realshift=\dimen334
 \realshift=\dimen335
 \realshift=\dimen336
+) [2 <./figs/Figure_2-eps-converted-to.pdf> <./figs/Figure_3-eps-converted-to.p
+df>]
+Underfull \vbox (badness 1394) has occurred while \output is active []
+
+
+(./figs/circuit3.tex
 \realshift=\dimen337
+\realshift=\dimen338
+) (./figs/circuit4.tex
+\realshift=\dimen339
+\realshift=\dimen340
+\realshift=\dimen341
+Missing character: There is no ; in font nullfont!
+\realshift=\dimen342
+\realshift=\dimen343
+\realshift=\dimen344
+\realshift=\dimen345
+\realshift=\dimen346
+\realshift=\dimen347
+\realshift=\dimen348
+\realshift=\dimen349
 ) (./tables/table2.tex)
+Underfull \hbox (badness 2698) in paragraph at lines 205--206
+[]\OT1/txr/m/n/12 Verification of closed loop cir-cuit de-sign
+ []
+
 Package epstopdf Info: Source file: <./figs/Figure_4.eps>
-(epstopdf)                    date: 2020-05-24 14:46:08
-(epstopdf)                    size: 663040 bytes
+(epstopdf)                    date: 2020-05-26 22:51:03
+(epstopdf)                    size: 683315 bytes
 (epstopdf)             Output file: <./figs/Figure_4-eps-converted-to.pdf>
-(epstopdf)                    date: 2020-05-24 14:46:44
-(epstopdf)                    size: 14945 bytes
+(epstopdf)                    date: 2020-05-26 22:51:23
+(epstopdf)                    size: 15800 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figs/Figure_4-eps-conver
 ted-to.pdf ./figs/Figure_4.eps>
-(epstopdf)             \includegraphics on input line 188.
+(epstopdf)             \includegraphics on input line 210.
 Package epstopdf Info: Output file is already uptodate.
-<./figs/Figure_4-eps-converted-to.pdf, id=73, 153.57375pt x 109.40875pt>
+<./figs/Figure_4-eps-converted-to.pdf, id=82, 158.5925pt x 109.40875pt>
 File: ./figs/Figure_4-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figs/Figure_4-eps-converted-to.pdf>
 Package pdftex.def Info: ./figs/Figure_4-eps-converted-to.pdf  used on input li
-ne 188.
-(pdftex.def)             Requested size: 252.0pt x 179.54166pt.
- [3 <./figs/Figure_4-eps-converted-to.pdf>]) [4
-
-]
+ne 210.
+(pdftex.def)             Requested size: 252.0pt x 173.86221pt.
+[3]) [4 <./figs/Figure_4-eps-converted-to.pdf>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 270.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 270.
  (./gvv_feedback_manual.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 270.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 270.
 Package rerunfilecheck Info: File `gvv_feedback_manual.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+(rerunfilecheck)             Checksum: 9534070C232AA0A3F935CB7C3E3F8D46;35.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 270.
  ) 
 Here is how much of TeX's memory you used:
- 38750 strings out of 492167
- 848624 string characters out of 6131559
- 1082841 words of memory out of 5000000
- 42379 multiletter control sequences out of 15000+600000
- 88225 words of font info for 209 fonts, out of 8000000 for 9000
+ 40072 strings out of 492167
+ 881419 string characters out of 6131559
+ 1210440 words of memory out of 5000000
+ 43693 multiletter control sequences out of 15000+600000
+ 89279 words of font info for 211 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 60i,17n,73p,511b,1156s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,17n,73p,511b,1178s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/public/txfonts/rtxb.pfb></usr/share/texmf-dist/fonts/type1/public/txfo
 nts/rtxmi.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/
@@ -1483,10 +1498,10 @@ onts/txsy.pfb></usr/share/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr
 /share/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts
 /type1/urw/times/utmr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8
 a.pfb>
-Output written on gvv_feedback_manual.pdf (4 pages, 119534 bytes).
+Output written on gvv_feedback_manual.pdf (4 pages, 129473 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
- 62 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 PDF objects out of 1000 (max. 8388607)
+ 144 compressed objects within 2 object streams
+ 68 named destinations out of 1000 (max. 500000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
